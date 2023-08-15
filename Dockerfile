@@ -14,7 +14,7 @@ ENV LANGUAGE en_US.UTF-8
 RUN apt-get update && apt-get install -y wget git
 
 RUN wget -q -O - \
-"https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz" \
+"https://cdn.alchitry.com/zola/zola-1.7.2-custom.tar.gz" \
 | tar xzf - -C /usr/local/bin
 
 COPY entrypoint.sh /entrypoint.sh
