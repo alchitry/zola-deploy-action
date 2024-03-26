@@ -14,7 +14,7 @@ ENV LANGUAGE en_US.UTF-8
 RUN apt-get update && apt-get install -y wget git
 
 RUN wget -q -O - \
-"https://cdn.alchitry.com/zola/zola-1.7.2-custom.tar.gz" \
+"https://cdn.alchitry.com/zola/zola-1.8.0-custom.tar.gz" \
 | tar xzf - -C /usr/local/bin
 
 COPY entrypoint.sh /entrypoint.sh
